@@ -20,3 +20,23 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:400;font-display:auto;src:url(../fonts/fa-brands-400.eot);src:url(../fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(../fonts/fa-brands-400.woff2) format("woff2"),url(../fonts/fa-brands-400.woff) format("woff"),url(../fonts/fa-brands-400.ttf) format("truetype"),url(../fonts/fa-brands-400.svg#fontawesome) format("svg")}.fab{font-family:'Font Awesome 5 Brands'}
+
+.project-icons {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.project-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #4e89af;
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.project-icons a:hover,
+.project-icons a:active {
+    color: #2d5f7f;
+    transform: translateY(-3px);
+}

@@ -22,27 +22,38 @@
 @font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:400;font-display:auto;src:url(../fonts/fa-brands-400.eot);src:url(../fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(../fonts/fa-brands-400.woff2) format("woff2"),url(../fonts/fa-brands-400.woff) format("woff"),url(../fonts/fa-brands-400.ttf) format("truetype"),url(../fonts/fa-brands-400.svg#fontawesome) format("svg")}.fab{font-family:'Font Awesome 5 Brands'}
 
 /* Project section icons */
-.project-icons {
-    text-align: center !important;
+.contents-right .project-icons,
+.contents-left .project-icons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     margin: 20px 0;
     width: 100%;
+    clear: both;
 }
 
-.project-icons a {
+.contents-right .project-icons a,
+.contents-left .project-icons a,
+.user-projects .project-icons a {
     display: inline-block;
     margin: 0 15px;
-    color: #000;
-    font-size: 2.5rem;
+    color: #000 !important;
+    font-size: 2.5rem !important;
+    line-height: 1;
     transition: color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
 }
 
-.project-icons a i {
-    font-size: 2.5rem;
+.contents-right .project-icons a i,
+.contents-left .project-icons a i,
+.user-projects .project-icons a i {
+    font-size: 2.5rem !important;
+    color: inherit;
 }
 
-.project-icons a:hover,
-.project-icons a:active {
-    color: #4e89af;
+.contents-right .project-icons a:hover,
+.contents-left .project-icons a:hover,
+.user-projects .project-icons a:hover {
+    color: #4e89af !important;
     transform: translateY(-3px);
 }
